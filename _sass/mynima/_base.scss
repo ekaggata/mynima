@@ -55,12 +55,14 @@ main {
  * Images
  */
 img {
+  display: block;
+  border-radius: $spacing-unit * 0.618 * 0.618;
   max-width: 100%;
   vertical-align: middle;
-  horizontal-align: center;
-  display: block;
-  border-radius: 4px;
-  padding: $spacing-unit * 0.618 * 0.618;
+  horizontal-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: $spacing-unit * 0.618 * 0.618;
 }
 
 
