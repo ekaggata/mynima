@@ -9,6 +9,7 @@ layout: default
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {%- assign date_format = site.mynima.date_format | default: "%H:M:%S %b %-d, %Y" -%}
         {{ page.date | date: date_format }}
+        {{ page.time | date: "%H:M:%S %b %-d, %Y" }}
       </time>
       {%- if page.author -%}
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
