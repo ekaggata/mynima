@@ -61,8 +61,8 @@ img {
   vertical-align: middle;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 1.618em;
+  margin-bottom: 1.618em;
 }
 
 
@@ -144,6 +144,10 @@ blockquote {
 
   > :last-child {
     margin-bottom: 0;
+  }
+
+  .tagline {
+      text-align: right;
   }
 }
 

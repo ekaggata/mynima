@@ -196,7 +196,10 @@
 
   > li {
     margin-bottom: $spacing-unit;
-    column-break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+      -moz-column-break-inside: avoid;
+        -o-column-break-inside: avoid;
+           column-break-inside: avoid;
   }
 }
 
