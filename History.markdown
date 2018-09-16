@@ -8,5 +8,16 @@
 
 ### Minor Enhancements
 
-  * gemspec update 
+  * gemspec update
   * Footer clean-up
+
+## 0.0.3
+
+### Bug Fixes
+
+  * ...
+
+
+### Minor Enhancements
+
+  * ...
