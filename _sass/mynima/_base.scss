@@ -57,7 +57,10 @@ main {
 img {
   max-width: 100%;
   vertical-align: middle;
+  horizontal-align: center;
   display: block;
+  border-radius: 4px;
+  padding: $spacing-unit * 0.618 * 0.618;
 }
 
 
