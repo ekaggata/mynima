@@ -15,12 +15,16 @@ layout: default
       {%- for post in site.posts -%}
       <li>
         {%- assign date_format = site.mynima.date_format | default: "%H:%M:%S %b %-d, %Y %Z" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
+        <a class="post-link" href="{{ post.url | relative_url }}">
+          <span class="post-meta">{{ post.date | date: date_format }}</span>
+        </a>
+        {%- if post.title != blank -%}
+          <h3>
+            <a class="post-link" href="{{ post.url | relative_url }}">
+              {{ post.title | escape }}
+            </a>
+          </h3>
+        {%- endif -%}
         {%- if site.show_excerpts -%}
           {{ post.excerpt }}
         {%- endif -%}

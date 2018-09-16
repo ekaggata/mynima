@@ -195,6 +195,7 @@
 
   > li {
     margin-bottom: $spacing-unit;
+    column-break-inside: avoid;
   }
 }
 
