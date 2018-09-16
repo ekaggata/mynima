@@ -16,6 +16,7 @@ layout: default
       <li>
         {%- assign date_format = site.mynima.date_format | default: "%H:%M:%S %b %-d, %Y %S" -%}
         <span class="post-meta">{{ post.date | date_to_xmlschema }}</span>
+        <p>Test</p>
         <h3>
           <a class="post-link" href="{{ post.url | relative_url }}">
             {{ post.title | escape }}
