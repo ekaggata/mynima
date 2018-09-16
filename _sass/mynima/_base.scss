@@ -145,10 +145,6 @@ blockquote {
   > :last-child {
     margin-bottom: 0;
   }
-
-  .tagline {
-      text-align: right;
-  }
 }
 
 
@@ -261,4 +257,13 @@ table {
   td {
     border: 1px solid $grey-color-light;
   }
+}
+
+/**
+ * Misc
+ */
+
+.tagline {
+      text-align: right;
+      text-style: italic;
 }
