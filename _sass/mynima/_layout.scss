@@ -191,6 +191,7 @@
 .post-list {
   margin-left: 0;
   list-style: none;
+  column-count: 2
 
   > li {
     margin-bottom: $spacing-unit;
