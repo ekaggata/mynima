@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "mynima"
-  spec.version       = "0.0.2"
+  spec.version       = "0.0.3"
   spec.authors       = ["Ivan Mashchenko"]
   spec.email         = ["3106934+ekaggata@users.noreply.github.com"]
 
