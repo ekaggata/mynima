@@ -285,7 +285,6 @@ table {
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
-  margin-bottom: $spacing-unit * 1.618 * 1.618;
 }
 
 .homepageabovecontent {
@@ -295,13 +294,12 @@ table {
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
-  margin-bottom: $spacing-unit * 1.618 * 1.618;
 }
 
 .avatardiv {
   display: inline-block;
   float: left;
-  margin-bottom: $spacing-unit * 1.618 * 1.618;
+  margin-bottom: $spacing-unit * 1.618;
 }
 
 .rightofavatar {
