@@ -193,7 +193,7 @@
   list-style: none;
   column-gap: $spacing-unit * 1.865;
 
-  @include media-query($on-laptop) {
+  @include laptop {
     column-count: 2;
   }
 

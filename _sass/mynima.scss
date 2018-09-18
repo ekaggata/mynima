@@ -39,6 +39,12 @@ $on-laptop:        1024px !default;
   }
 }
 
+@mixin laptop {
+  @media (screen and (min-width: 700px}) {
+    @content;
+  }
+}
+
 @mixin relative-font-size($ratio) {
   font-size: $base-font-size * $ratio;
 }
