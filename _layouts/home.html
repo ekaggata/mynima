@@ -14,6 +14,8 @@ layout: default
       {%- if site.tagline != blank -%}
         <p class="tagline">{{ site.tagline | escape }}</p>
       {%- endif -%}
+      <h2>Tags<h2>
+      {% include archive.html %}
     </div>
   </div>
 
