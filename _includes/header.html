@@ -18,7 +18,7 @@
 
         <div class="trigger">
           {%- for category in site.categories -%}
-            {%- if category not contains "menu" -%}
+            {%- unless category contains "menu" -%}
             <a class="page-link" href="{{ category | prepend: '/category/' | prepend: site.baseurl |  }}">{{ category | escape }}</a>
             {%- endif -%}
           {%- endfor -%}
