@@ -2,22 +2,13 @@
 
 ### Bug Fixes
 
-  * Forked from `minima` 1.0.0
+  * Forked from `minima`
 
 ## 0.0.2
-
-### Minor Enhancements
-
-  * gemspec update
-  * Footer clean-up
-
-## 0.0.3
-
-### Bug Fixes
 
   * ...
 
 
-### Minor Enhancements
+## 0.0.3
 
   * ...
