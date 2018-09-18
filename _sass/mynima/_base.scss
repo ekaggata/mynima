@@ -68,7 +68,9 @@ img {
 .avatar {
     border-radius: 50%;
     margin-left: 1.618em;
-    margin-bottom: 1.618em;
+    margin-right: 1.618em;
+    margin-top: 0.618em;
+    margin-bottom: 0.618em;
   }
 
 
@@ -273,3 +275,9 @@ table {
       text-align: right;
       font-style: italic;
 }
+
+div.rightofteavatar {
+  display = block;
+  width: 100%;
+}
+

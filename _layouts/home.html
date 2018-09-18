@@ -8,9 +8,13 @@ layout: default
     <img class="avatar" alt="Avatar" width="200" height="200" src="/assets/avatar.jpg" />
     {% endif %}
   {% endfor %}
+
+  <div class="rightofavatar">
   {%- if site.tagline != blank -%}
     <p class="tagline">{{ site.tagline | escape }}</p>
   {%- endif -%}
+  </div>
+
   {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
