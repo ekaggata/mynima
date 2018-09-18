@@ -1,14 +1,54 @@
 ---
 layout: default
 ---
-<div class="post">
-<h1>Tag: {{ page.tag }}</h1>
-<ul>
-{% for post in site.tags[page.tag] %}
-  <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
-    {{ post.description }}
-  </li>
-{% endfor %}
-</ul>
+
+<div class="home">
+  <div class="homepageabovecontent">
+    {% for static_file in site.static_files %}
+      {% if static_file.path == '/assets/avatar.jpg' %}
+      <div class="avatardiv"><img class="avatar" alt="Avatar" width="128" height="128" src="/assets/avatar.jpg" /></div>
+      {% endif %}
+    {% endfor %}
+
+    <div class="rightofavatar">
+      {%- if site.tagline != blank -%}
+        <p class="tagline">{{ site.tagline }}</p>
+      {%- endif -%}
+      {% include archive.html %}
+    </div>
+  </div>
+
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+  {%- if site.posts.size > 0 -%}
+    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+    <ul class="post-list">
+      {%- for post in site.tags[page.tag] -%}
+      <li>
+        {%- assign date_format = site.mynima.date_format | default: "%H:%M:%S %b %-d, %Y %Z" -%}
+        <a class="post-link" href="{{ post.url | relative_url }}">
+          <span class="post-meta">{{ post.date | date: date_format }}</span>
+        </a>
+        {%- if post.title != blank -%}
+          <h3>
+            <a class="post-link" href="{{ post.url | relative_url }}">
+              {{ post.title | escape }}
+            </a>
+          </h3>
+        {%- endif -%}
+        {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+        {%- endif -%}
+      </li>
+      {%- endfor -%}
+    </ul>
+
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  {%- endif -%}
+
 </div>
-<hr>
+
