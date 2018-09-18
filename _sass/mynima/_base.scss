@@ -283,14 +283,16 @@ table {
   vertical-align: middle;
   margin-left: auto;
   margin-right: auto;
+  overflow: hidden
 }
 
 .avatardiv {
+  display: inline-block;
   float: left;
 }
 
 .rightofavatar {
+  display: inline-block;
   float: right;
-  width: 100%;
 }
 
