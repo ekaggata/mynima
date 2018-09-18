@@ -20,7 +20,7 @@
           {%- for category in site.categories -%}
             {%- assign categoryname = category | first -%}
             {%- unless categoryname contains "menu" -%}
-            <a class="page-link" href="{{ categoryname | prepend: '/category/' | prepend: site.baseurl |  }}">{{ categoryname | escape }}</a>
+            <a class="page-link" href="{{ categoryname | prepend: '/category/' | prepend: site.baseurl |  }}">{{ categoryname | escape | capitalize }}</a>
             {%- endunless -%}
           {%- endfor -%}
           {%- for post in site.posts -%}
