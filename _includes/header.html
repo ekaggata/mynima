@@ -17,6 +17,11 @@
         </label>
 
         <div class="trigger">
+          {%- for category in site.categories -%}
+            {%- if category not contains "menu" -%}
+            <a class="page-link" href="{{ category | prepend: '/category/' | prepend: site.baseurl |  }}">{{ category | escape }}</a>
+            {%- endif -%}
+          {%- endfor -%}
           {%- for post in site.posts -%}
             {%- if post.title and post.categories contains "menu" -%}
             <a class="page-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
