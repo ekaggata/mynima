@@ -194,6 +194,10 @@
   column-count: 2;
   column-gap: $spacing-unit * 1.865;
 
+  @include media-query($on-palm) {
+    column-count: auto
+  }
+
   > li {
     margin-bottom: $spacing-unit;
     -webkit-column-break-inside: avoid;
