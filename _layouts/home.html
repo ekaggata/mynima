@@ -4,17 +4,7 @@ layout: default
 
 <div class="home">
   <div class="homepageabovecontent">
-    {% for static_file in site.static_files %}
-      {% if static_file.path == '/assets/avatar.jpg' %}
-      <div class="avatardiv"><img class="avatar" alt="Avatar" width="128" height="128" src="/assets/avatar.jpg" /></div>
-      {% endif %}
-    {% endfor %}
-
-    <div class="rightofavatar">
-    {%- if site.tagline != blank -%}
-      <p class="tagline">{{ site.tagline | escape }}</p>
-    {%- endif -%}
-    </div>
+    123
   </div>
 
   {%- if page.title -%}
