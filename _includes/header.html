@@ -18,8 +18,8 @@
 
         <div class="trigger">
           {%- for category in site.categories -%}
-            {%- unless category.title contains "menu" -%}
-            <a class="page-link" href="{{ category.title | prepend: '/category/' | prepend: site.baseurl |  }}">{{ category.title | escape }}</a>
+            {%- unless category | first contains "menu" -%}
+            <a class="page-link" href="{{ category | first | prepend: '/category/' | prepend: site.baseurl |  }}">{{ category | first | escape }}</a>
             {%- endunless -%}
           {%- endfor -%}
           {%- for post in site.posts -%}
