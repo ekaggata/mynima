@@ -3,6 +3,11 @@ layout: default
 ---
 
 <div class="home">
+  {% for static_file in site.static_files %}
+    {% if static_file.path == '/assets/avatar.jpg' %}
+    <img alt="Avatar" width="200" height="200" title="{{ page.author }}" src="/assets/avatar.jpg" />
+    {% endif %}
+  {% endfor %}
   {%- if site.tagline != blank -%}
     <p class="tagline">{{ site.tagline | escape }}</p>
   {%- endif -%}
