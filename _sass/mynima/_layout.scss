@@ -193,7 +193,7 @@
   list-style: none;
   column-gap: $spacing-unit * 1.865;
 
-  @include {
+  @include dual-column {
     column-count: 2;
   }
 
