@@ -193,7 +193,7 @@
   list-style: none;
   column-gap: $spacing-unit * 1.865;
 
-  @include laptop {
+  @include {
     column-count: 2;
   }
 
